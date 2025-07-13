@@ -11,6 +11,7 @@ app.use(express.json());
 
 // Import routes
 const superAdminRoutes = require("./routes/superadmin");
+app.use("/api/superadmin", superAdminRoutes);
 const mentorRoutes = require("./routes/mentor");
 const clientRoutes = require("./routes/client");
 
